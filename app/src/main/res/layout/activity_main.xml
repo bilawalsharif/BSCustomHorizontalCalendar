@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearDatepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/txtMonthName"
+            android:gravity="left"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:text="Decemeber"
+            android:textColor="#FF5722"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtYear"
+            android:gravity="left"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:text="2019"
+            android:textColor="#FF5722"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_drop_down_black_24dp"
+            app:tint="#FF5722 " />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivLeft"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_chevron_left_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.bs.bscustomhorizontalcalendar.Calendar.Calendar
+            android:id="@+id/customCalendar"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/ivLeft"
+            android:layout_toStartOf="@id/ivRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:identifier="customCalendar"
+            app:selectedDateColor="#FF5722"
+            app:borderCurrentDate="true"
+            app:enableDot="true"
+            app:bgcornerRadius="1"
+            app:setStroke="1"
+            app:startYear="2021"
+            app:endYear="2022"
+            app:hightLightCurrentDate="true"
+            app:calendarType="CIRCLE"/>
+        <ImageView
+            android:id="@+id/ivRight"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_chevron_right_24"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
