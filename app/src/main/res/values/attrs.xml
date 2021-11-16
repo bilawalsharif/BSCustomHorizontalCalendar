@@ -33,7 +33,7 @@
         <attr name="pattern" format="string" />
     </declare-styleable>
     <declare-styleable name="RCircularImageView">
-         
+
         <attr name="civ_border" format="boolean" />
         <attr name="civ_border_width" format="dimension" />
         <attr name="civ_border_color" format="color" />

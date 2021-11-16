@@ -22,7 +22,7 @@
             android:layout_height="20dp"
             android:layout_marginStart="8dp"
             android:text="Decemeber"
-            android:textColor="#FF5722"
+            android:textColor="#E91E63"
             android:textSize="14dp"
             android:textStyle="bold" />
         <TextView
@@ -32,7 +32,7 @@
             android:layout_height="20dp"
             android:layout_marginStart="8dp"
             android:text="2019"
-            android:textColor="#FF5722"
+            android:textColor="#E91E63"
             android:textSize="14dp"
             android:textStyle="bold" />
 
@@ -41,7 +41,7 @@
             android:layout_height="20dp"
             android:layout_gravity="center"
             android:src="@drawable/ic_arrow_drop_down_black_24dp"
-            app:tint="#FF5722 " />
+            app:tint="#E91E63" />
     </LinearLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -62,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:identifier="customCalendar"
-            app:selectedDateColor="#FF5722"
+            app:selectedDateColor="#E91E63"
             app:borderCurrentDate="true"
             app:enableDot="true"
             app:bgcornerRadius="1"
@@ -70,7 +70,7 @@
             app:startYear="2021"
             app:endYear="2022"
             app:hightLightCurrentDate="true"
-            app:calendarType="CIRCLE"/>
+            app:calendarType="SQUARE"/>
         <ImageView
             android:id="@+id/ivRight"
             android:layout_centerVertical="true"
