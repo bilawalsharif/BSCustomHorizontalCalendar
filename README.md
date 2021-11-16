@@ -5,7 +5,7 @@ This is Horizontal Calendar with fully customizable you can add or remove any fe
 Available multiple attributes including colors listers and styles.
 
 # Attributes under attr
-<attr name="identifier" format="string" />
+# <attr name="identifier" format="string" />
         <attr name="calendarType" format="string" />
         <attr name="selectedDateColor" format="string"/>
         <attr name="borderCurrentDate" format="boolean"/>
@@ -37,7 +37,6 @@ To deploy this project Add Following to build.gradle
   1)Add allprojects { repositories {maven { url 'https://jitpack.io' } } }
  
   2)Add  dependencies { implementation 'com.github.bilawalsharif:BSCustomHorizontalCalendar:LatestVesrion' }
-
-Screenshots
+  
 ![IMG_20211110_232140](https://user-images.githubusercontent.com/26865741/141945996-5dcfbc94-bd2e-478a-83d0-f3e0e086fb28.jpg)
 
